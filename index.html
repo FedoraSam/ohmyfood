@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea0baa1217.js" crossorigin="anonymous"></script>
     <title>Oh My Food</title>
 </head>
 <body>
@@ -15,58 +19,65 @@
     
     <nav>
     
-        <input type="text" name="city" placeholder="Paris, Belleville"><button>Rechercher</button>
+        <input type="text" name="city" placeholder="Paris, Belleville"></input>
+        <h2>Réservez le menu qui <br> vous convient</h2>
+        <p>Découvrez des restaurants d'exception,<br> sélectionnés par nos soins.</p>
+        <button class="button">Explorer nos restaurants</button>
+    </nav>
+    <aside>
         <h2>Fonctionnement</h2>
         <ul>
-            <li>Choisissez un restaurant</li>
-            <li>Composez votre menu</li>
-            <li>Dégustez au restaurants</li>
+            <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+            <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
+            <li><i class="fas fa-store"></i>Dégustez au restaurants</li>
         </ul>
-    </nav>
+    </aside>
     
-    <main>
+    <main class="restaurants">
         <h2>Restaurants</h2>
-        <div>
-            <a><img src="./images/restaurants/1.jpg" alt="restaurant la palette du goût">
-                <div>
+        
+    
+            <a href="#" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/1.jpg" alt="restaurant la palette du goût">
+                <div class="band">
                     <h3>La palette du goût</h3>
                     <address>Ménilmontant</address>
                 </div>
             </a>
-        </div>
-        <div>
-            <a><img src="./images/restaurants/2.jpg" alt="restaurant la note enchantée">
-                <div>
+        
+        
+            <a href="#" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/2.jpg" alt="restaurant la note enchantée">
+                <div class="band">
                     <h3>La note enchantée</h3>
                     <address>Charonne</address>
                 </div>
             </a>
-        </div>
-        <div>
-            <a><img src="./images/restaurants/3.jpg" alt="restaurant à la française">
-                <div>
+        
+            <a href="#" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/3.jpg" alt="restaurant à la française">
+                <div class="band">
                     <h3>A la française</h3>
                     <address>Cité Rouge</address>
                 </div>
             </a>
-        </div>
-        <div>
-            <a><img src="./images/restaurants/4.jpg" alt="rrestaurant le délice des sens">
-                <div>
+        
+            <a href="#" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/4.jpg" alt="restaurant le délice des sens">
+                <div class="band">
                     <h3>Le délice des sens</h3>
                     <address>Folie-Mérincourt</address>
                 </div>
             </a>
-        </div>
+        
     </main>
     <footer>
         <h3>ohmyfood</h3>
         <ul>
-            <li>proposer un restaurant</li>
-            <li>Devenir partenaire</li>
+            <li><i class="fas fa-utensils"></i> Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping"></i> Devenir partenaire</li>
         </ul>
-        <a>Metions légales</a>
-        <a>Contact</a>
+        <ul>
+            <li><a>Mentions légales</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+        
     </footer>
 </body>
 </html>

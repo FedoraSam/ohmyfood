@@ -1,5 +1,19 @@
-body{
+* {
     box-sizing: border-box;
     color: black;
+    text-decoration: none;
+    font-family: "roboto";
+}
+h3{
+    margin: 0;
+}
 
+header{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    }
+i{
+    font-size: 1,2em;
 }
