@@ -1,28 +1,32 @@
 nav{
-    background-color: rgba(233, 233, 233, 0.5);
+    background-color: rgba(233, 233, 233, 0.322);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
     text-align: center;
 }
 
 .button{
     display: inline-block;
     width: 50%;
-    height: 7vh;
+    height: 8vh;
     font-size: 1em;
     border-radius: 50px;
     border: none;
     color: white;
     background: linear-gradient(3turn, $primary, $secondary);
-    
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    box-shadow: $regular-shadow;
 }
 input{
     display: inline-block;
     width: 100%;
     height: 6vh;
-    background-color: rgba(233, 233, 233, 0.938);
+    background-color: rgba(199, 194, 194, 0.938);
     text-align: center;
     border: none;
+}
+.button:hover{
+    box-shadow: $hover-shadow;
 }

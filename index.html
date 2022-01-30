@@ -14,7 +14,7 @@
 <body>
     
     <header>
-        <h1><img src="./images/logo/ohmyfood.png"></h1>
+        <h1>ohmyfood</h1>
     </header>
     
     <nav>
@@ -27,9 +27,21 @@
     <aside>
         <h2>Fonctionnement</h2>
         <ul>
-            <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
-            <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
-            <li><i class="fas fa-store"></i>Dégustez au restaurants</li>
+            <li>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+                <div class="aside--list">1</div>
+            </li>
+            <li>
+                <i class="fas fa-list-ul"></i>
+                <p>Composez votre menu</p>
+                <div class="aside--list">2</div>
+            </li>
+            <li>
+                <i class="fas fa-store"></i>
+                <p>Dégustez au restaurant</p>
+                <div class="aside--list">3</div>
+            </li>
         </ul>
     </aside>
     
@@ -37,32 +49,62 @@
         <h2>Restaurants</h2>
         
     
-            <a href="#" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/1.jpg" alt="restaurant la palette du goût">
+            <a href="palette-gout.html" class="restaurants__block">
+                <img class="restaurants__block--link" src="./images/restaurants/1.jpg" alt="restaurant la palette du goût">
                 <div class="band">
-                    <h3>La palette du goût</h3>
-                    <address>Ménilmontant</address>
+                    <div>
+                        <h3>La palette du goût</h3>
+                        <address>Ménilmontant</address>
+                    </div>
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div> 
                 </div>
+                <div class="restaurants__block--new">Nouveau</div>
             </a>
         
         
-            <a href="note_enchantee.html" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/2.jpg" alt="restaurant la note enchantée">
+            <a href="note_enchantee.html" class="restaurants__block">
+                <img class="restaurants__block--link" src="./images/restaurants/2.jpg" alt="restaurant la note enchantée">
                 <div class="band">
-                    <h3>La note enchantée</h3>
-                    <address>Charonne</address>
+                    <div>
+                        <h3>La note enchantée</h3>
+                        <address>Charonne</address>
+                    </div>    
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div> 
+                </div>
+                <div class="restaurants__block--new">Nouveau</div>
+            </a>
+        
+            <a href="menu_francaise.html" class="restaurants__block">
+                <img class="restaurants__block--link" src="./images/restaurants/3.jpg" alt="restaurant à la française">
+                <div class="band">
+                    <div>
+                        <h3>À la française</h3>
+                        <address>Cité Rouge</address>
+                    </div>
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>   
                 </div>
             </a>
         
-            <a href="menu_francaise.html" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/3.jpg" alt="restaurant à la française">
+            <a href="delice-sens.html" class="restaurants__block">
+                <img class="restaurants__block--link" src="./images/restaurants/4.jpg" alt="restaurant le délice des sens">
                 <div class="band">
-                    <h3>A la française</h3>
-                    <address>Cité Rouge</address>
-                </div>
-            </a>
-        
-            <a href="#" class="restaurants__block"><img class="restaurants__block--link" src="./images/restaurants/4.jpg" alt="restaurant le délice des sens">
-                <div class="band">
-                    <h3>Le délice des sens</h3>
-                    <address>Folie-Mérincourt</address>
+                    <div>
+                        <h3>Le délice des sens</h3>
+                        <address>Folie-Mérincourt</address>
+                    </div>    
+                    <div class="like">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div> 
                 </div>
             </a>
         
