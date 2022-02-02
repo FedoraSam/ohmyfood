@@ -1,13 +1,10 @@
 main{
-    background-color: $background-color;
-    
+    background-color: $background-color;    
 }
 
 .header-menu{
     height: 300px;
-    position: relative;
-    
-    
+    position: relative;   
     &__picture{
         height: 100%;
         width: 100%;
@@ -49,8 +46,7 @@ main{
     color: $primary;
   }
 
-.entree{
-    
+.entree, .dessert, .plat{
     height: 70px;
     overflow: hidden;
     display: flex;
@@ -89,7 +85,21 @@ main{
 .entree:hover{
     box-shadow: $hover-shadow;
 }
+.plat:hover{
+    box-shadow: $hover-shadow;
+}
+.dessert:hover{
+    box-shadow: $hover-shadow;
+}
 .entree:hover > .entree--menu{
+    width: 70%;   
+    transition-duration: .5s;
+}
+.plat:hover > .plat--menu{
+    width: 70%;   
+    transition-duration: .5s;
+}
+.dessert:hover > .dessert--menu{
     width: 70%;   
     transition-duration: .5s;
 }
@@ -97,13 +107,21 @@ main{
     transform: rotate(-180deg);
     transition-duration: .7s;
 }
-.entree--menu__specs :first-of-type {
+.plat:hover > .plat--menu__checked i{
+    transform: rotate(-180deg);
+    transition-duration: .7s;
+}
+.dessert:hover > .dessert--menu__checked i{
+    transform: rotate(-180deg);
+    transition-duration: .7s;
+}
+.entree--menu__specs, .plat--menu__specs, .dessert--menu__specs :first-of-type {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;    
     font-size: 14px;
 }
-.entree--menu :first-of-type{
+.entree--menu, .plat--menu, .dessert--menu :first-of-type{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; 
