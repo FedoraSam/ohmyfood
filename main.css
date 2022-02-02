@@ -386,112 +386,101 @@ a i {
     opacity: 1;
   }
 }
-.entrees :nth-child(2) {
+.entree:nth-child(2) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
-.entrees :nth-child(3) {
+.entree:nth-child(3) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.45s;
+          animation-duration: 0.45s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.entree:nth-child(4) {
+  -webkit-animation-name: loading-menu;
+          animation-name: loading-menu;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.plat:nth-child(2) {
+  -webkit-animation-name: loading-menu;
+          animation-name: loading-menu;
+  -webkit-animation-duration: 0.35s;
+          animation-duration: 0.35s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.plat:nth-child(3) {
+  -webkit-animation-name: loading-menu;
+          animation-name: loading-menu;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
-.entrees :nth-child(4) {
+.plat:nth-child(4) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
-.entrees :nth-child(5) {
+.dessert:nth-child(2) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
-.plats :nth-child(2) {
+.dessert:nth-child(3) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
-.plats :nth-child(3) {
+.dessert:nth-child(4) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-.plats :nth-child(4) {
-  -webkit-animation-name: loading-menu;
-          animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-.desserts :nth-child(2) {
-  -webkit-animation-name: loading-menu;
-          animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-.desserts :nth-child(3) {
-  -webkit-animation-name: loading-menu;
-          animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-.desserts :nth-child(4) {
-  -webkit-animation-name: loading-menu;
-          animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }/*# sourceMappingURL=main.css.map */
