@@ -21,6 +21,13 @@ aside ul li i{
 
     margin-right: 40px;
 }
+aside ul li:last-child{
+    background-color: lighten($primary, 30%);
+}
+aside ul li:last-child i{
+    color: $primary;
+}
+
 .aside--list{
     color: white;
     border-radius: 50%;

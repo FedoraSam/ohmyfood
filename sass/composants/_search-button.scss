@@ -14,7 +14,7 @@ nav{
     border-radius: 50px;
     border: none;
     color: white;
-    background: linear-gradient(3turn, $primary, $secondary);
+    background: $gradient;
     margin-top: 3vh;
     margin-bottom: 6vh;
     box-shadow: $regular-shadow;
@@ -29,4 +29,5 @@ input{
 }
 .button:hover{
     box-shadow: $hover-shadow;
+    opacity: .9;
 }
