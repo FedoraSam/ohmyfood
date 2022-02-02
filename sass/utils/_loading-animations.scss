@@ -1,0 +1,41 @@
+@keyframes loading-menu{
+    from{
+  
+      opacity : 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+.entrees :nth-child(2){
+    @include loading-menu1;
+}
+.entrees :nth-child(3){
+    @include loading-menu2;
+}
+.entrees :nth-child(4){
+    @include loading-menu3;
+}
+.entrees :nth-child(5){
+    @include loading-menu4;
+}
+.plats :nth-child(2){
+    @include loading-menu1;
+}
+.plats :nth-child(3){
+    @include loading-menu2;
+}
+.plats :nth-child(4){
+    @include loading-menu3;
+}
+.desserts :nth-child(2){
+    @include loading-menu1;
+}
+.desserts :nth-child(3){
+    @include loading-menu2;
+}
+.desserts :nth-child(4){
+    @include loading-menu3;
+}
