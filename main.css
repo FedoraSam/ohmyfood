@@ -3,6 +3,7 @@ footer {
   color: white;
   padding-left: 5vw;
   margin-top: 10vh;
+  padding-bottom: 30px;
 }
 
 footer h3 {
@@ -18,6 +19,16 @@ footer i {
 .restaurants {
   padding-top: 10px;
   background-color: #e9e9e9;
+}
+@media (min-width: 700px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}
+.restaurants__header {
+  grid-column: 1/span 2;
 }
 .restaurants__block {
   height: 270px;
@@ -286,6 +297,7 @@ nav {
 .button {
   display: inline-block;
   width: 50%;
+  max-width: 350px;
   height: 8vh;
   font-size: 1em;
   border-radius: 50px;

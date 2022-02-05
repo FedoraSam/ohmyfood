@@ -2,7 +2,14 @@
 .restaurants{
     padding-top: 10px;
     background-color: $background-color;
-    
+    @media (min-width: 700px) {
+        display: grid;
+        grid-template-columns: (1fr 1fr);
+        grid-gap: 25px;
+    }
+    &__header{
+        grid-column: 1 / span 2;
+    }
     &__block{
         height: 270px;
         width: 100%;
@@ -44,3 +51,5 @@
 .restaurants__block:hover{
     box-shadow: $hover-shadow;
 }
+
+
