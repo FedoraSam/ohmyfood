@@ -27,6 +27,10 @@ footer i {
   height: 16px;
 }
 
+footer a {
+  color: white;
+}
+
 .restaurants {
   padding-top: 10px;
   background-color: #e9e9e9;
@@ -89,38 +93,6 @@ footer i {
 
 body {
   position: relative;
-}
-
-.loader {
-  -webkit-animation-name: loading-index;
-          animation-name: loading-index;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  position: absolute;
-  z-index: 9999;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  opacity: 1;
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loader__item {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(3turn, #9356DC, #FF79DA);
-  border-radius: 200px;
-  -webkit-animation-name: breathing-item;
-          animation-name: breathing-item;
-  -webkit-animation-duration: 4.4s;
-          animation-duration: 4.4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  text-align: center;
 }
 
 main {
@@ -202,9 +174,13 @@ main {
   box-shadow: 0px 2px 5px silver;
   border-radius: 15px;
   margin-top: 3vh;
-  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (mini-width: 1200px) {
+  .entree, .dessert, .plat {
+    width: 400px;
+  }
 }
 .entree--menu, .dessert--menu, .plat--menu {
   width: 100%;
@@ -375,6 +351,10 @@ nav {
   box-shadow: 0px 2px 5px silver;
 }
 
+label {
+  position: relative;
+}
+
 input, label {
   width: 100%;
   height: 5vh;
@@ -384,15 +364,18 @@ input, label {
 }
 
 input::-moz-placeholder {
-  content: "yo";
+  font-family: FontAwesome, "Roboto";
+  color: black;
 }
 
 input:-ms-input-placeholder {
-  content: "yo";
+  font-family: FontAwesome, "Roboto";
+  color: black;
 }
 
 input::placeholder {
-  content: "yo";
+  font-family: FontAwesome, "Roboto";
+  color: black;
 }
 
 .button:hover {
@@ -554,10 +537,10 @@ a i {
 .entree:nth-child(2) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -565,10 +548,10 @@ a i {
 .entree:nth-child(3) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.45s;
-          animation-duration: 0.45s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -576,10 +559,10 @@ a i {
 .entree:nth-child(4) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -587,10 +570,10 @@ a i {
 .entree:nth-child(5) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -598,8 +581,8 @@ a i {
 .plat:nth-child(2) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.35s;
-          animation-duration: 0.35s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
   -webkit-animation-fill-mode: backwards;
@@ -620,8 +603,8 @@ a i {
 .plat:nth-child(4) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
   -webkit-animation-fill-mode: backwards;
@@ -631,10 +614,10 @@ a i {
 .dessert:nth-child(2) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -642,10 +625,10 @@ a i {
 .dessert:nth-child(3) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -653,10 +636,42 @@ a i {
 .dessert:nth-child(4) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+.loader {
+  -webkit-animation-name: loading-index;
+          animation-name: loading-index;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: 1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader__item {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(3turn, #9356DC, #FF79DA);
+  border-radius: 200px;
+  -webkit-animation-name: breathing-item;
+          animation-name: breathing-item;
+  -webkit-animation-duration: 4.4s;
+          animation-duration: 4.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

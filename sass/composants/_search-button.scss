@@ -20,6 +20,9 @@ nav{
     margin-bottom: 6vh;
     box-shadow: $regular-shadow;
 }
+label{
+    position: relative;
+}
 input, label{
    
     width: 100%;
@@ -29,7 +32,8 @@ input, label{
     border: none;
 }
 input::placeholder{
-    content: 'yo';
+    font-family: FontAwesome, 'Roboto';
+    color: black;
 }
 .button:hover{
     box-shadow: $hover-shadow;

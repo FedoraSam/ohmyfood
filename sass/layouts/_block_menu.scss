@@ -69,9 +69,11 @@ main{
     box-shadow: $regular-shadow;
     border-radius: 15px;
     margin-top: 3vh;
-    max-width: 800px; 
     margin-left: auto; 
     margin-right: auto;
+    @media (mini-width: 1200px){
+        width: 400px;
+    }
     &--menu{
         width: 100%;
         height: 100%;

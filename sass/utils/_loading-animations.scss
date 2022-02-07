@@ -31,33 +31,43 @@
         transform: scale(1);
     }
 }
-.entree:nth-child(2){
-    @include loading-menu (0.5s, 0.2s);
+
+@for $i from 2 through 5 {
+    .entree:nth-child(#{$i}) {
+        @include loading-menu  (.3s, .2s*$i); 
+    }
 }
-.entree:nth-child(3){
-    @include loading-menu (.45s, 0.4s);
+@for $i from 2 through 4 {
+    .plat:nth-child(#{$i}) {
+        @include loading-menu (.3s, .2s*$i+.4); 
+    }
 }
-.entree:nth-child(4){
-    @include loading-menu (.4s, .6s);
+@for $i from 2 through 4 {
+    .dessert:nth-child(#{$i}) {
+        @include loading-menu (.3s, .2s*$i+.9); 
+    }
 }
-.entree:nth-child(5){
-    @include loading-menu (.4s, .6s);
-}
-.plat:nth-child(2){
-    @include loading-menu (.35s, .8s);
-}
-.plat:nth-child(3){
-    @include loading-menu (.3s, 1s);
-}
-.plat:nth-child(4){
-    @include loading-menu (.25s, 1.2s);
-}
-.dessert:nth-child(2){   
-    @include loading-menu (.20s, 1.4s);
-}
-.dessert:nth-child(3){   
-    @include loading-menu (.2s, 1.6s);
-}
-.dessert:nth-child(4){   
-    @include loading-menu (.2s, 1.8s);
+
+.loader{
+    @include loading-index;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 1;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item{
+        width: 200px;
+        height: 200px;
+        background: $gradient;
+        border-radius: 200px;
+        animation-name: breathing-item;
+        animation-duration: 4.4s;
+        animation-fill-mode: forwards;
+        text-align: center;
+    }
 }
