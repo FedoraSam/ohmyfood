@@ -60,22 +60,28 @@ main{
         flex-shrink: 0;
         padding-left: 20px;
         padding-top: 5px;
-        transition-duration: .2s;
+        transition-duration: .3s;
+        :first-child{
+            @include text-overflow
+        }
         &__specs{
             padding-right: 20px;
             display: flex;
             justify-content: space-between;  
             align-items: center;
+            :first-child{
+                @include text-overflow
+            }
         }
         &__checked{
             width: 30%;
-            height: 100%px;
+            height: 100%;
             background-color: $tertiary; 
             display: flex; 
             justify-content: center;
             align-items: center;
             font-size: 30px;
-            transform: rotate(180deg);
+            transform: rotate(0deg);
             transition-duration: 1s;
             color: white;
             overflow: hidden;
@@ -103,28 +109,18 @@ main{
     width: 70%;   
     transition-duration: .5s;
 }
+
 .entree:hover > .entree--menu__checked i{
-    transform: rotate(-180deg);
+    transform: rotate(360deg);
     transition-duration: .7s;
 }
 .plat:hover > .plat--menu__checked i{
-    transform: rotate(-180deg);
+    transform: rotate(360deg);
     transition-duration: .7s;
 }
 .dessert:hover > .dessert--menu__checked i{
-    transform: rotate(-180deg);
+    transform: rotate(360deg);
     transition-duration: .7s;
-}
-.entree--menu__specs, .plat--menu__specs, .dessert--menu__specs :first-of-type {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;    
-    font-size: 14px;
-}
-.entree--menu, .plat--menu, .dessert--menu :first-of-type{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; 
 }
 .entrees, .plats, .desserts{
     margin-top: 40px;

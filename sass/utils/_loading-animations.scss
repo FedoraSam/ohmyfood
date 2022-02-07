@@ -17,6 +17,9 @@
 .entree:nth-child(4){
     @include loading-menu (.4s, .6s);
 }
+.entree:nth-child(5){
+    @include loading-menu (.4s, .6s);
+}
 .plat:nth-child(2){
     @include loading-menu (.35s, .8s);
 }

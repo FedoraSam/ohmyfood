@@ -14,3 +14,8 @@
     animation-delay: $delay;
     animation-fill-mode: backwards;
 }
+@mixin text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}

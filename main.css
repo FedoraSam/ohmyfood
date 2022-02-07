@@ -141,7 +141,12 @@ main {
   flex-shrink: 0;
   padding-left: 20px;
   padding-top: 5px;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
+}
+.entree--menu :first-child, .dessert--menu :first-child, .plat--menu :first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entree--menu__specs, .dessert--menu__specs, .plat--menu__specs {
   padding-right: 20px;
@@ -149,15 +154,20 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.entree--menu__specs :first-child, .dessert--menu__specs :first-child, .plat--menu__specs :first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .entree--menu__checked, .dessert--menu__checked, .plat--menu__checked {
   width: 30%;
-  height: 100% px;
+  height: 100%;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition-duration: 1s;
   color: white;
   overflow: hidden;
@@ -191,31 +201,18 @@ main {
 }
 
 .entree:hover > .entree--menu__checked i {
-  transform: rotate(-180deg);
+  transform: rotate(360deg);
   transition-duration: 0.7s;
 }
 
 .plat:hover > .plat--menu__checked i {
-  transform: rotate(-180deg);
+  transform: rotate(360deg);
   transition-duration: 0.7s;
 }
 
 .dessert:hover > .dessert--menu__checked i {
-  transform: rotate(-180deg);
+  transform: rotate(360deg);
   transition-duration: 0.7s;
-}
-
-.entree--menu__specs, .plat--menu__specs, .dessert--menu__specs :first-of-type {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 14px;
-}
-
-.entree--menu, .plat--menu, .dessert--menu :first-of-type {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .entrees, .plats, .desserts {
@@ -452,6 +449,17 @@ a i {
 }
 
 .entree:nth-child(4) {
+  -webkit-animation-name: loading-menu;
+          animation-name: loading-menu;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.entree:nth-child(5) {
   -webkit-animation-name: loading-menu;
           animation-name: loading-menu;
   -webkit-animation-duration: 0.4s;
