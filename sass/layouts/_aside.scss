@@ -4,12 +4,17 @@ aside {
     background-color: #fff;
     padding-top: 9vh;
     padding-bottom: 9vh;
+    @media (min-width:768px){
+    text-align: center;
+    }
 }
 aside ul{
     @media (min-width: 768px){
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;   
+    }
+    @media (min-width: 1200px){
+        justify-content: space-around;
     }
 }
 aside ul li{
@@ -21,7 +26,7 @@ aside ul li{
     position: relative;
     background-color: rgba(233, 233, 233, 1);
     padding-left: 50px;
-    max-width: 400px;
+    max-width: 700px;
     @media (min-width: 768px){
         padding-left: 3%;
         padding-right: 2%;
