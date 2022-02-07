@@ -1,5 +1,12 @@
 main{
-    background-color: $background-color;    
+    background-color: $background-color;
+    padding: 0 5vw;   
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: (1fr 1fr 1fr);
+        grid-gap: 2vw;
+        padding: 0 2vw;
+    } 
 }
 
 .header-menu{

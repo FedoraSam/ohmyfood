@@ -14,6 +14,12 @@
     animation-delay: $delay;
     animation-fill-mode: backwards;
 }
+@mixin loading-index {
+    animation-name: loading-index;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
 @mixin text-overflow {
     white-space: nowrap;
     overflow: hidden;

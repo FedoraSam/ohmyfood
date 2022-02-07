@@ -2,7 +2,6 @@ footer {
   background-color: #4d3e3e;
   color: white;
   padding-left: 5vw;
-  margin-top: 10vh;
   padding-bottom: 30px;
 }
 
@@ -19,6 +18,7 @@ footer i {
 .restaurants {
   padding-top: 10px;
   background-color: #e9e9e9;
+  margin-bottom: 10vh;
 }
 @media (min-width: 768px) {
   .restaurants {
@@ -39,6 +39,7 @@ footer i {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 2px 5px silver;
+  max-width: 600px;
 }
 .restaurants__block--link {
   width: 100%;
@@ -55,14 +56,13 @@ footer i {
   color: rgba(0, 0, 0, 0.5);
   border-radius: 7px;
 }
-
-.band {
+.restaurants__block--banner {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 25%;
   background-color: #fff;
-  line-height: 4vh;
+  line-height: 3vh;
   padding: 5px 15px;
   display: flex;
   justify-content: space-between;
@@ -73,8 +73,53 @@ footer i {
   opacity: 0.7;
 }
 
+body {
+  position: relative;
+}
+
+.loader {
+  -webkit-animation-name: loading-index;
+          animation-name: loading-index;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: 1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader__item {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(3turn, #9356DC, #FF79DA);
+  border-radius: 200px;
+  -webkit-animation-name: breathing-item;
+          animation-name: breathing-item;
+  -webkit-animation-duration: 4.4s;
+          animation-duration: 4.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  text-align: center;
+}
+
 main {
   background-color: #e9e9e9;
+  padding: 0 5vw;
+}
+@media (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    padding: 0 2vw;
+  }
 }
 
 .header-menu {
@@ -235,11 +280,6 @@ body {
   background-color: #e9e9e9;
 }
 
-main {
-  padding-right: 5vw;
-  padding-left: 5vw;
-}
-
 a {
   color: black;
 }
@@ -356,6 +396,7 @@ aside ul li {
   position: relative;
   background-color: #e9e9e9;
   padding-left: 50px;
+  max-width: 400px;
 }
 @media (min-width: 768px) {
   aside ul li {
@@ -424,6 +465,52 @@ a i {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes loading-index {
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading-index {
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes breathing-item {
+  0% {
+    transform: scale(1);
+  }
+  45%, 52% {
+    transform: scale(1.3);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes breathing-item {
+  0% {
+    transform: scale(1);
+  }
+  45%, 52% {
+    transform: scale(1.3);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
   }
 }
 .entree:nth-child(2) {
