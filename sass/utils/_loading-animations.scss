@@ -73,5 +73,10 @@
         animation-duration: 3s;
         animation-fill-mode: forwards;
         text-align: center;
+        &--title{
+            font-size: 2em;
+            font-family: 'shrikhand';
+            border-bottom: none;
+        }
     }
 }

@@ -1,7 +1,7 @@
 main{
     background-color: $background-color;
     padding: 0 5vw;   
-    @media (min-width: 1200px) {
+    @media (min-width: map-get($breakpoint, desktop)) {
         display: flex;
         padding: 0 2vw;
         max-width: 1300px;
@@ -34,7 +34,7 @@ main{
             justify-content: space-between;
             align-items: baseline;
             padding: 0 5vw;
-            @media (min-width: 1200px){
+            @media (min-width: map-get($breakpoint, desktop)){
                 max-width: 1300px;
             }
         }
@@ -47,10 +47,10 @@ main{
 .far.fa-heart {
     color: black;
     position: absolute;
-    font-size: 25px;
+    font-size: 2em;
   }
 .fas.fa-heart{
-    font-size: 25px;    
+    font-size: 2em;    
     top: 0;
     left: 0;
     color: #fff;
@@ -141,7 +141,7 @@ main{
 }
 .entrees, .plats, .desserts{
     margin: 7vh auto;
-    @media (min-width: 1200px){
+    @media (min-width: map-get($breakpoint, desktop)){
         width: 30%;
     }
 }

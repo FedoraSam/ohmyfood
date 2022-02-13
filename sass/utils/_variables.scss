@@ -5,3 +5,9 @@ $background-color: rgb(231, 225, 225);
 $gradient: linear-gradient(3turn, $primary, $secondary);
 $regular-shadow: 0px 2px 5px silver;
 $hover-shadow: 0px 5px 10px rgb(100, 100, 100);
+
+$breakpoint: (
+    tablette: 768px,
+    desktop: 1200px,
+    desktop-xl: 2000px,
+)

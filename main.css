@@ -191,11 +191,11 @@ main {
 .far.fa-heart {
   color: black;
   position: absolute;
-  font-size: 25px;
+  font-size: 2em;
 }
 
 .fas.fa-heart {
-  font-size: 25px;
+  font-size: 2em;
   top: 0;
   left: 0;
   color: #fff;
@@ -358,7 +358,6 @@ main {
 
 body {
   font-family: 'Roboto';
-  color: black;
   margin: 0;
   background-color: #e7e1e1;
 }
@@ -371,6 +370,86 @@ h1 {
   font-family: 'shrikhand';
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 7em;
+  }
+}
+
+@media (min-width: 2000px) {
+  h1 {
+    font-size: 10em;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 2000px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 2000px) {
+  h3 {
+    font-size: 35px;
+  }
+}
+
+h4 {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 20px;
+  }
 }
 
 ul {
@@ -386,11 +465,6 @@ i {
 
 p {
   font-size: 15px;
-}
-
-h3 {
-  margin: 0;
-  font-size: 0.8em;
 }
 
 address {
@@ -430,6 +504,12 @@ nav {
   margin-bottom: 6vh;
   -webkit-box-shadow: 0px 2px 5px silver;
           box-shadow: 0px 2px 5px silver;
+}
+
+@media (min-width: 768px) {
+  .button {
+    margin-bottom: 3vh;
+  }
 }
 
 label {
@@ -481,6 +561,13 @@ aside {
 @media (min-width: 768px) {
   aside {
     text-align: center;
+  }
+}
+
+@media (min-width: 2000px) {
+  aside {
+    padding: 2vh 25vw;
+    border-radius: 15px;
   }
 }
 
@@ -565,11 +652,29 @@ header {
 header a {
   position: absolute;
   left: 20px;
-  top: 13px;
+  top: 8%;
 }
 
 a i {
-  font-size: 20px;
+  font-size: 2em;
+}
+
+@media (min-width: 768px) {
+  a i {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  a i {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 2000px) {
+  a i {
+    font-size: 5em;
+  }
 }
 
 @-webkit-keyframes loading-menu {
@@ -807,5 +912,11 @@ a i {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   text-align: center;
+}
+
+.loader__item--title {
+  font-size: 2em;
+  font-family: 'shrikhand';
+  border-bottom: none;
 }
 /*# sourceMappingURL=main.css.map */

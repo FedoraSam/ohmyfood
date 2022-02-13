@@ -19,6 +19,9 @@ nav{
     margin-top: 3vh;
     margin-bottom: 6vh;
     box-shadow: $regular-shadow;
+    @media (min-width: map-get($breakpoint, tablette)){
+        margin-bottom: 3vh;
+    }
 }
 label{
     position: relative;

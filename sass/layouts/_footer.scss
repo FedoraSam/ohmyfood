@@ -2,7 +2,7 @@ footer{
     @include text-color (hsla(356, 12%, 27%, 1));
     padding-left: 5vw;
     padding-bottom: 30px;
-    @media (min-width: 768px){
+    @media (min-width: map-get($breakpoint, tablette)){
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -10,7 +10,7 @@ footer{
 }
 footer h2{
     font-family: 'Shrikhand';
-    @media (min-width: 768px){
+    @media (min-width: map-get($breakpoint, tablette)){
     font-size: 30px;
     }
 }

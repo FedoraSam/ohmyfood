@@ -4,16 +4,21 @@ aside {
     background-color: #fff;
     padding-top: 9vh;
     padding-bottom: 9vh;
-    @media (min-width:768px){
+    @media (min-width: map-get($breakpoint, tablette)){
     text-align: center;
     }
+    @media (min-width: map-get($breakpoint, desktop-xl)){
+        padding: 2vh 25vw;
+        border-radius: 15px;
+    }
+          
 }
 aside ul{
-    @media (min-width: 768px){
+    @media (min-width: map-get($breakpoint, tablette)){
         display: flex;
         justify-content: space-between;   
     }
-    @media (min-width: 1200px){
+    @media (min-width: map-get($breakpoint, desktop)){
         justify-content: space-around;
     }
 }
@@ -27,7 +32,7 @@ aside ul li{
     background-color: rgba(233, 233, 233, 1);
     padding-left: 50px;
     max-width: 700px;
-    @media (min-width: 768px){
+    @media (min-width: map-get($breakpoint, tablette)){
         padding-left: 3%;
         padding-right: 2%;
         width: 32%;
@@ -37,7 +42,7 @@ aside ul li{
 }
 aside ul li i{
     margin-right: 40px;
-    @media (min-width: 768px){
+    @media (min-width: map-get($breakpoint, tablette)){
         margin-right: 5%;
     }
 }

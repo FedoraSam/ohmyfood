@@ -3,7 +3,7 @@
     padding-top: 10px;
     background-color: $background-color;
     margin-bottom: 10vh;
-    @media (min-width: 768px) {
+    @media (min-width: map-get($breakpoint, tablette)){
         display: grid;
         grid-template-columns: (1fr 1fr);
         grid-gap: 25px;
