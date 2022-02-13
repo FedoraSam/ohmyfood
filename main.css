@@ -1,5 +1,5 @@
 footer {
-  background-color: #4d3e3e;
+  background-color: #4d3d3e;
   color: white;
   padding-left: 5vw;
   padding-bottom: 30px;
@@ -19,12 +19,12 @@ footer {
   }
 }
 
-footer h3 {
+footer h2 {
   font-family: 'Shrikhand';
 }
 
 @media (min-width: 768px) {
-  footer h3 {
+  footer h2 {
     font-size: 30px;
   }
 }
@@ -89,8 +89,8 @@ footer a {
   right: 15px;
   top: 15px;
   background-color: #99E2D0;
+  color: black;
   padding: 1vh 1vw;
-  color: rgba(0, 0, 0, 0.5);
   border-radius: 7px;
 }
 
@@ -100,6 +100,7 @@ footer a {
   width: 100%;
   height: 25%;
   background-color: #fff;
+  color: black;
   line-height: 3vh;
   padding: 5px 15px;
   display: -webkit-box;
@@ -127,11 +128,9 @@ main {
 
 @media (min-width: 1200px) {
   main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 0 2vw;
     max-width: 1300px;
     margin: 0 auto;
@@ -161,6 +160,7 @@ main {
   max-width: 800px;
   margin: 0 auto;
   background-color: #e7e1e1;
+  color: black;
   border-radius: 30px 30px 0px 00px;
   font-family: 'Shrikhand';
   display: -webkit-box;
@@ -221,16 +221,11 @@ main {
   margin-right: auto;
 }
 
-@media (mini-width: 1200px) {
-  .entree, .dessert, .plat {
-    width: 400px;
-  }
-}
-
 .entree--menu, .dessert--menu, .plat--menu {
   width: 100%;
   height: 100%;
   background-color: #fff;
+  color: black;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding-left: 20px;
@@ -268,6 +263,7 @@ main {
   width: 30%;
   height: 100%;
   background-color: #99E2D0;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,8 +337,13 @@ main {
 }
 
 .entrees, .plats, .desserts {
-  max-width: 800px;
   margin: 7vh auto;
+}
+
+@media (min-width: 1200px) {
+  .entrees, .plats, .desserts {
+    width: 30%;
+  }
 }
 
 .desserts {
@@ -381,12 +382,6 @@ i {
   font-size: 1.2em;
   display: inline-block;
   text-align: center;
-}
-
-h4 {
-  font-weight: bolder;
-  font-size: 18px;
-  margin: 0 0;
 }
 
 p {
@@ -596,8 +591,10 @@ a i {
 }
 
 @-webkit-keyframes loading-index {
-  0%, 50% {
+  0% {
     opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.48, 0.05, 0.83, 0.86);
+            animation-timing-function: cubic-bezier(0.48, 0.05, 0.83, 0.86);
   }
   100% {
     opacity: 0;
@@ -605,8 +602,10 @@ a i {
 }
 
 @keyframes loading-index {
-  0%, 50% {
+  0% {
     opacity: 1;
+    -webkit-animation-timing-function: cubic-bezier(0.48, 0.05, 0.83, 0.86);
+            animation-timing-function: cubic-bezier(0.48, 0.05, 0.83, 0.86);
   }
   100% {
     opacity: 0;
@@ -617,6 +616,8 @@ a i {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-animation-timing-function: cubic-bezier(0.34, 0.55, 0.54, 0.92);
+            animation-timing-function: cubic-bezier(0.34, 0.55, 0.54, 0.92);
   }
   45%, 52% {
     -webkit-transform: scale(1.3);
@@ -629,6 +630,8 @@ a i {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-animation-timing-function: cubic-bezier(0.35, 0.57, 0.56, 0.97);
+            animation-timing-function: cubic-bezier(0.35, 0.57, 0.56, 0.97);
   }
 }
 
@@ -636,6 +639,8 @@ a i {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-animation-timing-function: cubic-bezier(0.34, 0.55, 0.54, 0.92);
+            animation-timing-function: cubic-bezier(0.34, 0.55, 0.54, 0.92);
   }
   45%, 52% {
     -webkit-transform: scale(1.3);
@@ -648,6 +653,8 @@ a i {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-animation-timing-function: cubic-bezier(0.35, 0.57, 0.56, 0.97);
+            animation-timing-function: cubic-bezier(0.35, 0.57, 0.56, 0.97);
   }
 }
 
@@ -764,10 +771,12 @@ a i {
 .loader {
   -webkit-animation-name: loading-index;
           animation-name: loading-index;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   position: absolute;
   z-index: 9999;
   width: 100%;
@@ -793,8 +802,8 @@ a i {
   border-radius: 200px;
   -webkit-animation-name: breathing-item;
           animation-name: breathing-item;
-  -webkit-animation-duration: 4.4s;
-          animation-duration: 4.4s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   text-align: center;

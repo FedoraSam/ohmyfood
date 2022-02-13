@@ -16,12 +16,22 @@
 }
 @mixin loading-index {
     animation-name: loading-index;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
 }
 
 @mixin text-overflow {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;    
+}
+@mixin text-color ($color) {
+    background-color: $color;
+    @if (lightness($color)<30%){
+        color: white;
+    }@else{
+        color: black;
+    }
+
 }

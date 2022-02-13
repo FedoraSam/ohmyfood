@@ -1,6 +1,5 @@
 footer{
-    background-color: rgb(77, 62, 62);
-    color: white;
+    @include text-color (hsla(356, 12%, 27%, 1));
     padding-left: 5vw;
     padding-bottom: 30px;
     @media (min-width: 768px){
@@ -9,7 +8,7 @@ footer{
     align-items: center;
     }
 }
-footer h3{
+footer h2{
     font-family: 'Shrikhand';
     @media (min-width: 768px){
     font-size: 30px;

@@ -2,9 +2,7 @@ main{
     background-color: $background-color;
     padding: 0 5vw;   
     @media (min-width: 1200px) {
-        display: grid;
-        grid-template-columns: (1fr 1fr 1fr);
-        grid-gap: 2vw;
+        display: flex;
         padding: 0 2vw;
         max-width: 1300px;
         margin: 0 auto;
@@ -29,7 +27,7 @@ main{
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
-            background-color: $background-color;
+            @include text-color ($background-color);
             border-radius: 30px 30px 0px 00px;
             font-family: 'Shrikhand';
             display: flex;
@@ -71,13 +69,11 @@ main{
     margin-top: 3vh;
     margin-left: auto; 
     margin-right: auto;
-    @media (mini-width: 1200px){
-        width: 400px;
-    }
+    
     &--menu{
         width: 100%;
         height: 100%;
-        background-color: #fff;
+        @include text-color (#fff);
         flex-shrink: 0;
         padding-left: 20px;
         padding-top: 5px;
@@ -97,7 +93,7 @@ main{
         &__checked{
             width: 30%;
             height: 100%;
-            background-color: $tertiary; 
+            @include text-color ($tertiary); 
             display: flex; 
             justify-content: center;
             align-items: center;
@@ -144,9 +140,10 @@ main{
     transition-duration: .7s;
 }
 .entrees, .plats, .desserts{
-    
-    max-width: 800px;
     margin: 7vh auto;
+    @media (min-width: 1200px){
+        width: 30%;
+    }
 }
 .desserts{
     margin-bottom: 5vh;
