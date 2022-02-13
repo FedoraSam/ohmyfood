@@ -31,12 +31,34 @@ footer h2 {
 
 footer i {
   display: inline-block;
-  width: 20px;
   height: 16px;
+  width: 40px;
 }
 
 footer a {
   color: white;
+}
+
+footer li {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  footer li {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer li {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2000px) {
+  footer li {
+    font-size: 30px;
+  }
 }
 
 .restaurants {
@@ -413,8 +435,8 @@ h2 {
 }
 
 h3 {
-  margin: 0;
-  font-size: 0.8em;
+  margin: .2vh 0;
+  font-size: 1em;
 }
 
 @media (min-width: 768px) {
@@ -452,6 +474,28 @@ h4 {
   }
 }
 
+address {
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  address {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  address {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2000px) {
+  address {
+    font-size: 28px;
+  }
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -465,10 +509,6 @@ i {
 
 p {
   font-size: 15px;
-}
-
-address {
-  font-size: 0.6em;
 }
 
 span {
@@ -644,6 +684,24 @@ aside ul li:last-child i {
   left: -10px;
 }
 
+@media (min-width: 768px) {
+  .h2-line-return {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h2-line-return {
+    display: none;
+  }
+}
+
+@media (min-width: 2000px) {
+  .h2-line-return {
+    display: none;
+  }
+}
+
 header {
   position: relative;
   background-color: #fff;
@@ -652,11 +710,29 @@ header {
 header a {
   position: absolute;
   left: 20px;
-  top: 8%;
+  top: 4%;
+}
+
+@media (min-width: 768px) {
+  header a {
+    top: 8%;
+  }
+}
+
+@media (min-width: 1200px) {
+  header a {
+    top: 12%;
+  }
+}
+
+@media (min-width: 2000px) {
+  header a {
+    top: 8%;
+  }
 }
 
 a i {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -673,7 +749,7 @@ a i {
 
 @media (min-width: 2000px) {
   a i {
-    font-size: 5em;
+    font-size: 4em;
   }
 }
 

@@ -63,3 +63,14 @@ aside ul li:last-child i{
     position: absolute;
     left: -10px;
   }
+  .h2-line-return{
+    @media (min-width: map-get($breakpoint, tablette)){
+        display: none;
+    }
+    @media (min-width: map-get($breakpoint, desktop)){
+        display: none;
+    }
+    @media (min-width: map-get($breakpoint, desktop-xl)){
+        display: none;
+    }
+  }

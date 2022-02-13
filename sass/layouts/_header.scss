@@ -7,11 +7,20 @@ header{
 header a{
     position: absolute;
     left: 20px;
-    top: 8%;
+    top: 4%;
+    @media (min-width: map-get($breakpoint, tablette)){
+        top: 8%;   
+    }
+    @media (min-width: map-get($breakpoint, desktop)){
+        top: 12%;
+    }
+    @media (min-width: map-get($breakpoint, desktop-xl)){
+        top: 8%;
+    }
     
 }
 a i{
-    font-size: 2em;
+    font-size: 1.5em;
     @media (min-width: map-get($breakpoint, tablette)){
         font-size: 2em;
     }
@@ -19,6 +28,6 @@ a i{
     font-size: 3em;
     }
     @media (min-width: map-get($breakpoint, desktop-xl)){
-        font-size: 5em;
+        font-size: 4em;
     }
 }
