@@ -1,10 +1,10 @@
 @keyframes loading-menu{
     from{
-  
-      opacity : 0;
+        
+      transform : scaleY(0);
     }
     to {
-      opacity: 1;
+      transform: scaleY(1);
     }
   }
 @keyframes loading-index {
@@ -39,16 +39,19 @@
 @for $i from 2 through 5 {
     .entree:nth-child(#{$i}) {
         @include loading-menu  (.3s, .2s*$i); 
+        transform-origin: bottom;
     }
 }
 @for $i from 2 through 4 {
     .plat:nth-child(#{$i}) {
         @include loading-menu (.3s, .2s*$i+.4); 
+        transform-origin: bottom;
     }
 }
 @for $i from 2 through 4 {
     .dessert:nth-child(#{$i}) {
         @include loading-menu (.3s, .2s*$i+.9); 
+        transform-origin: bottom;
     }
 }
 
@@ -73,10 +76,13 @@
         animation-duration: 3s;
         animation-fill-mode: forwards;
         text-align: center;
+        padding-top: 7vh;
         &--title{
             font-size: 2em;
             font-family: 'shrikhand';
             border-bottom: none;
+            color: black;
+            
         }
     }
 }
